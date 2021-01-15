@@ -1,0 +1,37 @@
+{% extends 'templates.html' %}
+
+{% block title_page %}Товар - {{ object.title|title }}{% endblock %}
+
+{% block content %}
+	<main>
+		{% if not object.verified and object.provider.owner == user or product.provider.workers.all in user %}
+			Здравтвуйте, ожидайте пока модератор одобрит Ваш бланк на добавление довара.
+		{% endif %}
+		<p>Заголовок: {{ object.title|title }}
+			{% if user.is_superuser or companie_owner.owner == user or companie_owner.workers.all in user %}
+				<a href="{{ object.get_update_url }}"><i class="fa fa-pencil"></i></a>
+				<a href="{{ object.get_delete_url }}"><i class="fa fa-trash"></i></a>
+			{% endif %}
+		</p>
+		<p>Описание:{{ object.description }}</p>
+		<p>Категории: {% for category in object.category.all %}<a href="{{ category.get_absolute_url }}">{{ category.name }}</a>, {% endfor %}</p>
+		<p>Наличие: {{ object.was_availability }}</p>
+		<p>Стоимость: {{ object.price}}</p>
+		<p>Дата: {{ object.date }}, <a href="{{ object.provider.get_absolute_url }}">{{ object.provider.name }}</a></p>
+
+	</main>
+
+	<main>
+		{% if user.is_authenticated %}
+			<p style="font-size: 25px">Оформить заказ</p>
+			<form method="post">{% csrf_token %}
+				{{ form.as_ul }}
+				<label>Скидка:</label> <input type="text" name="sale" value="">
+				<br>
+				<input type="submit" value="Оформить заказ">
+			</form>
+		{% else %}
+			Авторизуйтесь чтоб оформить заказ
+		{% endif %}
+	</main>	
+{% endblock %}

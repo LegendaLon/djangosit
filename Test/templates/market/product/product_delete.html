@@ -1,0 +1,15 @@
+{% extends 'templates.html' %}
+
+{% block title_page %}Удаление - {{ object.title|title }}{% endblock %}
+
+{% block content %}
+
+	<main>
+		<form method="post">{% csrf_token %}
+		    <p>Вы точно хотите удалить "{{ object.title|title }}"?</p>
+		    <input type="submit" value="Да">
+		</form>
+		<a href="{% url 'market:product-list' %}">Назад</a>
+	</main>
+
+{% endblock %}

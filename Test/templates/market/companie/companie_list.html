@@ -1,0 +1,13 @@
+{% extends 'templates.html' %}
+
+{% block title_page %}Список заказов{% endblock %}
+
+{% block content %}
+	<main>
+		<p>Список компаний</p>
+
+		{% for companie in object_list %}
+			<p><a href="{{ companie.get_absolute_url }}">{{ companie.name }}</a></p>
+		{% endfor %}	
+	</main>
+{% endblock %}

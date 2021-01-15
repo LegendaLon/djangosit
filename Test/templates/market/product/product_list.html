@@ -1,0 +1,50 @@
+{% extends 'templates.html' %}
+
+{% block title_page %}Список товары{% endblock %}
+
+{% block content %}
+	<div id="market-menu">
+		{% if user.is_superuser or companie_owner.owner == user or companie_owner.workers.all in user %}
+
+			<main class="menu-block">
+				<p><a href="{% url 'market:order-list' %}">Список заказов</a></p>
+			</main>
+
+			<main class="menu-block">
+				<p><a href="{% url 'market:product-create' %}">Добавить товар</a></p>
+			</main>
+
+
+		{% endif %}
+		{% if user.is_authenticated %}
+			<main class="menu-block">
+				<p><a href="{% url 'market:order-clientlist' %}">Список ваших покупок</a></p>
+			</main>
+		{% endif %}
+	</div>
+
+	<main>
+		<p>Список товаров:</p>
+	</main>
+
+	<div id="market-conteiner">
+		{% for product in object_list %}
+			{% if product.verified or user.is_staff %}
+				<main class="market-block">
+					{% if product.provider.owner == user or product.provider.workers.all in user or user.is_superuser %}
+						<a href="{{ product.get_update_url }}"><i class="fa fa-pencil"></i></a>	
+						<a href="{{ product.get_delete_url }}"><i class="fa fa-trash"></i></a>
+					{% endif %}
+					<p><a href="{{ product.get_absolute_url }}">{{ product.title }}</a></p>
+					<p>Стоимость: {{ product.price }}</p>
+					<p>Наличие: {{ product.was_availability }}</p>
+					<p>Поставщик: <a href="{{ product.provider.get_absolute_url }}">{{ product.provider.name }}</a></p>
+					{% if not product.verified and user.is_staff %}
+						<p>Товар не показываеться обычным пользователям</p>
+					{% endif %}
+				</main>
+			{% endif %}
+		{% endfor %}
+	</div>
+		
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'templates.html' %}
+
+{% block title_page %}Категория - {{ object.name }}{% endblock %}
+
+{% block content %}
+	<main>
+		{{ object.name }}
+	</main>
+
+	<main>
+		{% for product in object.category.all %}
+
+			<p><a href="{{ product.get_absolute_url }}">{{ product.title }}</a></p>
+
+		{% endfor %}
+	</main>
+{% endblock %}

@@ -1,0 +1,9 @@
+<div class="comments">
+	<div class="title">
+		<a href="{{ comment.author.profile.get_absolute_url }}">{{ comment.author.username }}</a>
+	</div>
+	<div class="text">
+		{{ comment.text }}
+	</div>
+	<div class="footer"><p title="{{ comment.date|date }}">{{ comment.date|time }}</p></div>
+</div>

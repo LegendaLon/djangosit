@@ -1,0 +1,46 @@
+{% extends 'templates.html' %}
+
+{% block title_page %}{{ object.title }} — Новость{% endblock %}
+
+{% block content %}
+
+	<!-- Пост -->
+	<main>
+		<h2>{{ object.title }}</h2>
+		<h3>{{ object.text }}</h3>
+		Автор: <a href="{{ object.author.profile.get_absolute_url }}">{{ object.author.username }}</a>
+		Время создания: {{ object.date|date }}
+
+	</main>
+
+	<!-- Коментарии к посту -->
+	<main>
+		<h2>Коментарии:</h2>
+		{% for comment in object.comment.all %}
+			{% include 'include/comment.html' %}
+		{% empty %}
+			Коментариев нет =( стань первым
+		{% endfor %}
+	</main>
+
+	<!-- Добавить новый коментарий -->
+	<main>
+		{% if user.is_authenticated %}
+			{% if not post.archived %}
+				<h2>Добавить коментарий</h2>
+				<form method="POST">
+					{% csrf_token %}
+					{% include 'include/method_add.html' %}
+					<input type="text" name="text" placeholder="Введите текст">
+					<br>
+					<input type="submit" value="Оставить коментарий">
+				</form>
+			{% else %}
+				<h2>Пост архивирован, Вы не можете оставлять коментарии</h2>
+			{% endif %}
+		{% else %}
+			<h2>Вы не авторизованы, <a href="{% url 'auth:login' %}">Войти</a></h2>
+		{% endif %}
+	</main>
+
+{% endblock %}

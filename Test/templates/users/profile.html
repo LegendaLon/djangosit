@@ -1,0 +1,50 @@
+{% extends 'templates.html' %}
+
+{% block title_page %}{{ users.username }} — Профиль{% endblock %}
+
+{% block content %}
+
+	<main>
+
+		<p style="font-size: 30px;">{{ users.username }}</p>
+		<p>Статус: {{ users.profile.status }}</p>
+		<p>Звание: {{ users.profile.rank }}</p>
+
+		<p>Инфорация о пользователе:</p>
+		<p>{{ users.profile.bio }}</p>
+
+		<p>Зарегистрировался: {{ users.date_joined }}</p>
+
+		<br>
+		{% if user.is_staff %}
+			<strong>Информация которая доступна только персоналу сайта:</strong>
+			<p>Email: {{ users.email }}</p>
+			<p>Date Register: {{ users.date_joined}}</p>
+			<p>Group: {% for a in users.groups.all %} {{ a.name }} {% endfor %}</p>
+		{% endif %}
+ 		
+	</main>
+	{% if users == user %}
+		<main>	
+			Изменить:
+			<form style="padding-left: 20px" method="post">{% csrf_token %}
+				<table>
+					<p>
+						<tr>
+							<label>Статус:</label>
+							<p><input size="40px" type="text" name="status" value="{{ users.profile.status }}"></p>
+						</tr>
+					</p>
+				  	<p>
+						<tr>
+							<label>Инфорация о пользователе:</label>
+							<p><input size="40px" type="text" name="bio" value="{{ users.profile.bio }}"></p>
+						</tr>
+					</p>
+				</table>
+				<input type="submit" value="Изменить">
+			</form>
+		</main>
+	{% endif %}
+
+{% endblock %}

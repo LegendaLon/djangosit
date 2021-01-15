@@ -1,0 +1,35 @@
+{% extends 'templates.html' %}
+{% load static %}
+
+{% block title_page %}Главная страница{% endblock %}
+
+{% block content %}
+	{% if user.is_staff %}
+		<!-- <main>
+			<h2>Создать новость: </h2>
+			<section>
+				<form method="POST">
+					{% csrf_token %}
+					<input type="text" name="title" placeholder="Введите название">
+					<br>
+					<input type="text" name="text" placeholder="Введите текст">
+					<br>
+					<input type="submit" value="Создать новость">
+				</form>
+			</section>
+		</main> -->
+	{% endif %}
+	{% if object_list %}
+		{% for post in object_list %}
+			<main>
+				<a class="title" href="{% url 'basepage:detail' post.id %}">{{ post.title }}</a>
+				<p><a href="{{ post.author.profile.get_absolute_url }}">{{ post.author.username }}</a>  {{ post.date }}</p>
+			</main>
+		{% endfor %}
+	{% else %}
+		<main>
+			<h3>Новости не найдены</h3>
+		</main>
+	{% endif %}
+
+{% endblock %}

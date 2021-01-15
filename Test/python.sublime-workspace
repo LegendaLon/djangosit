@@ -1,0 +1,816 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"op",
+				"option"
+			],
+			[
+				"Bot",
+				"_BotOnwer"
+			],
+			[
+				"em",
+				"embeds"
+			],
+			[
+				"g",
+				"guild"
+			],
+			[
+				"gui",
+				"GuildCount"
+			],
+			[
+				"pag",
+				"PagesCount"
+			],
+			[
+				"gu",
+				"guilds"
+			],
+			[
+				"int",
+				"intent"
+			],
+			[
+				"in",
+				"intents"
+			],
+			[
+				"log",
+				"Log"
+			],
+			[
+				"c",
+				"commands"
+			],
+			[
+				"e",
+				"embed"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"d",
+				"discord"
+			],
+			[
+				"com",
+				"command"
+			],
+			[
+				"Goo",
+				"GoogleResult"
+			],
+			[
+				"p",
+				"pprint"
+			],
+			[
+				"re",
+				"response"
+			],
+			[
+				"Re",
+				"response"
+			],
+			[
+				"au",
+				"Auntification"
+			],
+			[
+				"id",
+				"IDRoles"
+			],
+			[
+				"t",
+				"type"
+			],
+			[
+				"Id",
+				"IDRoles"
+			],
+			[
+				"rep",
+				"relpaces"
+			],
+			[
+				"Rep",
+				"ReplaceText"
+			],
+			[
+				"is",
+				"is_owner"
+			],
+			[
+				"New",
+				"NewGuildOwnerList"
+			],
+			[
+				"new",
+				"NewGuildOwnerList"
+			],
+			[
+				"mess",
+				"MessageText"
+			],
+			[
+				"Me",
+				"MessageText"
+			],
+			[
+				"bot",
+				"BotManager"
+			],
+			[
+				"Bo",
+				"BossBattle"
+			],
+			[
+				"text",
+				"Text"
+			],
+			[
+				"res",
+				"results"
+			],
+			[
+				"To",
+				"TOTAL_SELECTOR"
+			],
+			[
+				"sta",
+				"StartObject"
+			],
+			[
+				"try",
+				"try\tTry/Except"
+			],
+			[
+				"Sta",
+				"StartObject"
+			],
+			[
+				"Se",
+				"SearchObjects"
+			],
+			[
+				"se",
+				"SearchObjects"
+			],
+			[
+				"va",
+				"value"
+			],
+			[
+				"ob",
+				"object"
+			],
+			[
+				"asy",
+				"asyncio"
+			],
+			[
+				"w",
+				"Wikepedia"
+			],
+			[
+				"Ob",
+				"StartObject"
+			],
+			[
+				"Pr",
+				"_PrefixList"
+			],
+			[
+				"val",
+				"value"
+			],
+			[
+				"Comm",
+				"CommandList"
+			],
+			[
+				"comm",
+				"commands"
+			],
+			[
+				"add",
+				"add_field"
+			],
+			[
+				"mem",
+				"member"
+			],
+			[
+				"dele",
+				"delete_after"
+			],
+			[
+				"сооб",
+				"сообщений"
+			],
+			[
+				"comman",
+				"commands"
+			],
+			[
+				"pla",
+				"PlayerList"
+			],
+			[
+				"ow",
+				"Owner"
+			],
+			[
+				"de",
+				"description"
+			],
+			[
+				"tr",
+				"try\tTry/Except"
+			],
+			[
+				"as",
+				"async"
+			],
+			[
+				"a",
+				"argv"
+			],
+			[
+				"_To",
+				"_TokenPath"
+			],
+			[
+				"tra",
+				"Training_Outputs"
+			],
+			[
+				"s",
+				"synaptic_weights"
+			],
+			[
+				"v",
+				"value2"
+			],
+			[
+				"cool",
+				"cooldown_attack"
+			],
+			[
+				"col",
+				"cooldown_attack"
+			],
+			[
+				"valu",
+				"value1"
+			],
+			[
+				"deta",
+				"detail_status"
+			],
+			[
+				"el",
+				"elif"
+			],
+			[
+				"comma",
+				"commands"
+			],
+			[
+				"coma",
+				"command"
+			],
+			[
+				"Aut",
+				"Auntification"
+			],
+			[
+				"rol",
+				"rolesid"
+			],
+			[
+				"ma",
+				"message"
+			],
+			[
+				"нож",
+				"ножници"
+			],
+			[
+				"sen",
+				"Sentence"
+			],
+			[
+				"me",
+				"message"
+			],
+			[
+				"G",
+				"GenerateIdeaOrBuild"
+			],
+			[
+				"lo",
+				"LogChannelVoid"
+			],
+			[
+				"command",
+				"command"
+			],
+			[
+				"con",
+				"BotConfig"
+			],
+			[
+				"temp",
+				"temperature"
+			],
+			[
+				"D",
+				"discord"
+			],
+			[
+				"BO",
+				"BotConfig"
+			],
+			[
+				"R",
+				"ReturnAPIKeysPyOWN"
+			],
+			[
+				"__A",
+				"__APIKeysPyOWN"
+			],
+			[
+				"Co",
+				"__CommandPrefix"
+			],
+			[
+				"cl",
+				"client"
+			],
+			[
+				"h",
+				"HitsInARow"
+			],
+			[
+				"Wea",
+				"WeaponInValorant"
+			],
+			[
+				"max_",
+				"max_length"
+			],
+			[
+				"Mo",
+				"Model"
+			],
+			[
+				"elem",
+				"elements"
+			],
+			[
+				"__",
+				"__CreateResultOfDataBase"
+			],
+			[
+				"DA",
+				"DataList"
+			],
+			[
+				"_",
+				"_view__all"
+			],
+			[
+				"__cre",
+				"__CreateAllTable"
+			],
+			[
+				"tab",
+				"TableList"
+			],
+			[
+				"m",
+				"month"
+			],
+			[
+				"da",
+				"day"
+			],
+			[
+				"str",
+				"strftime"
+			],
+			[
+				"data",
+				"DataBasePath"
+			],
+			[
+				"ко",
+				"комманда"
+			],
+			[
+				"st",
+				"start"
+			],
+			[
+				"n",
+				"now"
+			],
+			[
+				"Da",
+				"DataBasePath"
+			],
+			[
+				"pr",
+				"PROJECT_ROOT"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/D/Code/python/DataBaseCreate/main.py",
+			"settings":
+			{
+				"buffer_size": 1097,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/Code/python/DataBaseCreate/db.txt",
+			"settings":
+			{
+				"buffer_size": 63,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"intsl",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"packe",
+				"Package Control: Install Package"
+			],
+			[
+				"term",
+				"Terminality: Browse Commands..."
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"packet",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/Code/python",
+		"/D/Code/python/DataBaseCreate"
+	],
+	"file_history":
+	[
+		"/D/Code/django/Test/s.txt",
+		"/D/Code/django/djangowebsite/root/settings.py",
+		"/D/Code/django/Test/Test/settings.py",
+		"/D/Code/python/neuron/test3.py",
+		"/C/Users/Legen/Downloads/script.py",
+		"/D/Code/discord py/blackspirit/modules/fun.py",
+		"/D/Code/discord py/blackspirit/modules/admin.py",
+		"/D/Code/discord py/blackspirit/modules/special/wikipedia.py",
+		"/D/Code/discord py/blackspirit/modules/tools.py",
+		"/D/Code/discord py/blackspirit/modules/system.py",
+		"/D/Code/discord py/blackspirit/modules/support.py",
+		"/D/Code/discord py/blackspirit/modules/moderators.py",
+		"/D/Code/discord py/blackspirit/modules/special/weather.py",
+		"/D/Programm/python/Lib/site-packages/discord/embeds.py",
+		"/C/Users/Legen/OneDrive/Документы/kms_tools-zip",
+		"/C/Users/Legen/AppData/Local/Temp/Temp1_kms-tools.zip/Пароль.txt",
+		"/C/Users/Legen/OneDrive/Рабочий стол/столици.txt",
+		"/D/Code/discord py/blackspirit/modules/special/stric.py",
+		"/D/Code/discord py/blackspirit/modules/specialforgroup/yoidprivat.py",
+		"/D/Code/discord py/blackspirit/test.py",
+		"/D/Programm/python/Lib/site-packages/coronavirus/__init__.py",
+		"/D/Code/discord py/blackspirit/a.py",
+		"/D/Code/discord py/blackspirit/requirements.txt",
+		"/D/Code/discord py/blackspirit/test.txt",
+		"/D/Code/discord py/blackspirit/betatest.py",
+		"/C/Users/Legen/OneDrive/Рабочий стол/start.bat",
+		"/D/Code/discord py/blackspirit/main.py",
+		"/D/Code/discord py/blackspirit/столицы.txt",
+		"/D/Programm/python/Lib/site-packages/googlesearch/modules/standard_search.py",
+		"/D/Programm/python/Lib/site-packages/googlesearch/__init__.py",
+		"/D/Programm/python/Lib/site-packages/googlesearch/google.py",
+		"/D/Programm/python/Lib/site-packages/google/modules/standard_search.py",
+		"/D/Programm/python/Lib/site-packages/google/google.py",
+		"/D/Programm/python/Lib/site-packages/google/modules/shopping_search.py",
+		"/D/Programm/python/Lib/site-packages/google/modules/utils.py",
+		"/D/Programm/python/Lib/site-packages/wikipedia/wikipedia.py",
+		"/D/Code/discord py/blackspirit/modules/special/mafia.py",
+		"/D/Code/discord py/blackspirit/modules/special/bossbattle.py",
+		"/C/Users/Legen/OneDrive/Рабочий стол/история.txt",
+		"/C/Users/Legen/Downloads/mcserver (1).js",
+		"/D/Code/discord py/blackspirit/modules/weather.py",
+		"/D/Code/discord py/blackspirit/tools.py",
+		"/D/Code/discord py/blackspirit/modules/__init__.py",
+		"/D/Code/discord py/blackspirit/__init__.py",
+		"/D/Programm/python/Lib/site-packages/googlesearch/googlesearch.py",
+		"/D/Code/python/neuron/Test1.py",
+		"/D/Code/python/neuron/Test2.py",
+		"/C/Users/Legen/Downloads/Новая папка/script.js",
+		"/D/Code/discord py/blackspirit/Procfile",
+		"/D/Code/python/neuron/Test1.txt",
+		"/C/Users/Legen/Downloads/whitelist.json",
+		"/C/Users/Legen/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Legen/OneDrive/Документы/Rainmeter/Skins/NUXHD/Visualizer/Visualizer.ini",
+		"/C/Users/Legen/AppData/Roaming/Rainmeter/Rainmeter.ini",
+		"/D/Code/discord py/blackspirit/.gitignore",
+		"/D/Code/discord py/blackspirit/runtime.txt",
+		"/D/Code/discord py/blackspirit2.0/main.py",
+		"/D/Code/django/djangowebsite/root/apps/VLStatistics/models.py",
+		"/D/Code/django/djangowebsite/root/urls.py",
+		"/D/Code/django/djangowebsite/root/apps/VLStatistics/admin.py",
+		"/D/Code/django/djangowebsite/root/apps/ValorantStatistics/models.py",
+		"/D/Code/django/djangowebsite/root/apps/VLStatistics/urls.py",
+		"/D/Code/django/djangowebsite/root/apps/VLStatistics/views.py",
+		"/D/Code/django/djangowebsite/root/templates/vls.html",
+		"/D/Code/django/djangowebsite/root/templates/base/index.html",
+		"/D/Code/django/djangowebsite/root/apps/auth/views.py",
+		"/D/Code/django/djangowebsite-master/root/settings.py",
+		"/C/Users/Legen/AppData/Roaming/.minecraft/optionsof.txt",
+		"/C/Users/Legen/AppData/Roaming/.minecraft/options.txt",
+		"/C/Users/Legen/AppData/Local/Temp/Temp1_assortment-of-objects-video-game-in-pixel-art.zip/License free.txt",
+		"/C/Users/Legen/AppData/Local/Temp/Temp1_assortment-of-objects-video-game-in-pixel-art.zip/License premium.txt",
+		"/D/Code/django/DevelopersSite/requirements.txt",
+		"/D/Code/django/DevelopersSite/Procfile",
+		"/D/Code/django/DevelopersSite/runtime.txt",
+		"/C/Users/Legen/OneDrive/Документы/Rainmeter/Skins/Layer1/layer1.ini",
+		"/C/Users/Legen/OneDrive/Документы/Rainmeter/Skins/Lano-Visualizer-master/visualizer.ini",
+		"/D/Code/django/DevelopersSite/DeveloperSite/static/CSS/style.css",
+		"/D/Code/django/DevelopersSite/DeveloperSite/settings.py",
+		"/D/Code/django/DeveloperSite/DeveloperSite/urls.py",
+		"/D/Code/django/DeveloperSite/DeveloperSite/apps/auth/views.py",
+		"/D/Code/django/djangowebsite-master/root/urls.py",
+		"/D/Code/django/DeveloperSite/DeveloperSite/apps/BasePage/views.py",
+		"/D/Code/django/DeveloperSite/DeveloperSite/apps/ValorantStatistics/urls.py",
+		"/D/Code/django/DeveloperSite/DeveloperSite/apps/ValorantStatistics/views.py",
+		"/D/Code/django/DeveloperSite/DeveloperSite/apps/ValorantStatistics/models.py",
+		"/D/Code/python/ValorantStatistics/database.py",
+		"/D/Code/python/ValorantStatistics.py",
+		"/D/Code/discord py/blackspirit2.0/test.py",
+		"/D/Code/discord py/blackspirit2.0/config/__init__.py",
+		"/D/Code/discord py/blackspirit2.0/__init__.py",
+		"/D/Code/django/DeveloperSite/DeveloperSite/apps/BasePage/apps.py",
+		"/D/Code/django/DeveloperSite/DeveloperSite/apps/BasePage/urls.py",
+		"/D/Code/django/InGameSite/InGameSite/apps/BasePage/urls.py",
+		"/D/Code/django/InGameSite/InGameSite/settings.py",
+		"/D/Code/django/djangowebsite-master/root/templates/templates.html",
+		"/C/Users/Legen/Downloads/Военные фильмы скачать бесплатно » Страница 5.pdf",
+		"/D/Код/django/InGameSite/InGameSite/apps/BasePage/urls.py",
+		"/D/Код/django/InGameSite/InGameSite/apps/BasePage/views.py",
+		"/D/Код/django/InGameSite/InGameSite/urls.py",
+		"/D/Код/django/InGameSite/InGameSite/static/css/style.css",
+		"/D/Код/django/djangowebsite-master/root/templates/templates.html",
+		"/D/Код/django/InGameSite/InGameSite/templates/templetes.html",
+		"/D/Код/django/djangowebsite-master/root/urls.py",
+		"/C/Users/Legen/AppData/Roaming/Sublime Text 3/Packages/User/{%%}spippet.sublime-snippet",
+		"/D/Код/django/djangowebsite-master/root/apps/base/urls.py",
+		"/D/Код/django/djangowebsite-master/root/settings.py",
+		"/C/Users/Legen/AppData/Roaming/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
+		"/C/Users/Legen/OneDrive/Рабочий стол/Код/python/test.py"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/D/Code/python/DataBaseCreate/main.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1097,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								951,
+								951
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 315.2,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/D/Code/python/DataBaseCreate/db.txt",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 63,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								63,
+								63
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 51.2
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/Python/Python.sublime-build",
+	"project": "python.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 233.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

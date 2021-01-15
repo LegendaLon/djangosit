@@ -1,0 +1,44 @@
+{% extends 'templates.html' %}
+
+{% block title_page %}Список заказов{% endblock %}
+
+{% block content %}
+	{% if user.is_authenticated %}
+		<div id="market-menu">
+
+			<main class="menu-block">
+				<p><a href="{% url 'market:product-list' %}">Список товаров</a></p>
+			</main>
+		</div>
+
+		<main>
+			<p>Список заказов:</p>
+
+			{% for order in object_list %}
+				{% if order.product.provider.owner == user or order.product.provider.workers.all in user or user.is_staff %}
+
+					<p>
+						<a href="{{ order.get_absolute_url }}">
+							Клиент: <a href="{{ order.client.get_absolute_url }}">{{ order.client.username }}</a>,
+							Продукт: <a href="{{ order.product.get_absolute_url }}">{{ order.product.title }}</a>,
+							Количество: {{ order.count }},
+							Общая стоимость: {{ order.was_total_price }}
+							Статус: {{ order.status }} |
+						</a>
+						<a href="{{ order.get_update_url }}"><i class="fa fa-pencil"></i></a>	
+						<a href="{{ order.get_delete_url }}"><i class="fa fa-trash"></i></a>
+					</p>
+					<br>
+
+				{% endif %}
+
+			{% empty %}
+				Нет заказов
+			{% endfor %}	
+		</main>
+
+	{% else %}
+		Вы не авторизованы для просмотра данного контента
+	{% endif %}
+
+{% endblock %}

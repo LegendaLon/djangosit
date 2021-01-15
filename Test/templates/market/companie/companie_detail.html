@@ -1,0 +1,23 @@
+{% extends 'templates.html' %}
+
+{% block title_page %}Детали компании - {{ object.name }}{% endblock %}
+
+{% block content %}
+
+	<main>
+		<p>Название: {{ object.name }}</p>
+
+		<p>Сотрудники: </p>
+		<p>Владелец: <a href="{{ object.owner.profile.get_absolute_url }}">{{ object.owner }}</a></p>
+		<p>{% for a in object.workers.all %}<a href="{{ a.profile.get_absolute_url }}">{{ a.username }}</a>{% endfor %}</p>
+
+	</main>
+
+	<main>
+		<p>Товары которые предоставляет компания:</p>
+		{% for product in object.product.all %}
+			<p><a href="{{ product.get_absolute_url }}">{{ product.title }}</a></p>
+		{% endfor %}
+	</main>
+
+{% endblock %}

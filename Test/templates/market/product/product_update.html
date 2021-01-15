@@ -1,0 +1,12 @@
+{% extends 'templates.html' %}
+
+{% block title_page %}Товары{% endblock %}
+
+{% block content %}
+	<main>
+		<form class="" method="post">{% csrf_token %}
+			{{ form.as_ul }}
+			<input type="submit" value="Изменить">
+		</form>
+	</main>
+{% endblock %}

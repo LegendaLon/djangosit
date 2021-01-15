@@ -1,0 +1,195 @@
+:root {
+	--backgroundcolor: #F8F8F8;
+	--color2: #9EB3C0;
+	--font-color: #626262;
+	--block-color: #fff;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: var(--font-color);
+	text-decoration: none;
+}
+
+
+body {
+	background-color: var(--backgroundcolor);
+}
+
+header {
+    text-align: justify;
+    letter-spacing: 1px;
+    height: 5em;
+    padding: 2em 10%;
+    color: #fff;
+
+	background-color: var(--block-color);
+	padding: 15px;
+
+	box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.1);
+}
+
+header::after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+header ul li {
+	float: left;
+	list-style-type: none;
+	padding: 10px 20px;
+}
+
+header div.logo {
+	padding-top: 10px;
+	font-size: 30px;
+}
+
+header ul.menu {
+	list-style: none;
+	position: absolute;
+	top: 25px;
+	right: 3%;
+}
+
+header ul.menu li:hover, header ul.menu li:hover a, header ul.menu li:hover a i {
+	background-color: var(--font-color);
+	color: var(--block-color); 
+}
+
+/**/
+footer {
+	background-color: var(--block-color);
+	padding: 30px;
+	margin-top: 15px;
+	float: bottom;
+
+	box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.1);
+
+	min-height: 300px;
+}
+
+main {
+	margin: 10px 0 0 5%;
+	background-color: var(--block-color);
+	padding: 25px;
+	max-width: 90%;
+	box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.1);
+	border-radius: 0.5rem;
+	border: none;
+	display: block;
+}
+
+main.market-block {
+	margin: 15px 15px 0 0px;
+	padding: 25px;
+	max-width: 315px;
+	min-width: 314px;
+	min-height: 400px;
+	display: inline-table;
+}
+
+#market-conteiner {
+	margin: 10px 5% 0 5%;
+	text-align: center;
+}
+
+div#market-menu {
+	margin: 10px 0 0 5%;
+}
+
+div#market-menu main.menu-block {
+	margin: 0;
+	display: inline-table;
+	min-width: 100px;
+	margin-right: 20px;
+}
+/* Messages */
+#message-log {
+	padding: 0;
+	margin: 0;
+}
+#message-log li {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+/* Authorization */
+#authorization {
+	margin: 20px;
+}
+
+#authorization table tr {
+	margin: 15px;
+}
+
+#authorization table tr td input {
+	margin-right: 10px;
+    background: none;
+    font-size: 16px;
+    text-align: left;
+    outline: none;
+    height: auto;
+}
+
+#authorization input[type="submit"] {
+	padding: 15px;
+	color: #fff;
+	border: none;
+	background-color: var(--color2);
+}
+
+.comments {
+	padding: 4px;
+	margin-top: 4px;
+}
+
+.comments .title .footer {
+	font-size: 16px;
+	color: gray;
+}
+
+main a.title {
+	font-size: 30px;
+}
+
+/* Стилизация формы */
+.input form[method="POST"] {
+	margin: 10px;
+}
+
+.input form[method="POST"] input[type="text"] {
+	padding: 25px;
+	border: none;
+	color: #fff;
+	background-color: var(--block-color);
+}
+
+.input form[method="POST"] input[type="submit"] {
+	margin-top: 5px;
+	color: #fff;
+	background-color: var(--block-color);
+	border: none;
+	padding: 20px;
+}
+
+.input form[method="POST"] input[type="submit"]:hover {
+	background-color: var(--color2)
+}
+
+.input form[method="POST"] button[type="submit"] {
+	padding: 5px;
+	border: none;
+	background-color: #fff;
+}
+/*nav {
+	float: right;
+	margin: 10px 3% 0 0;
+	background-color: var(--block-color);
+	padding: 10px;
+}*/

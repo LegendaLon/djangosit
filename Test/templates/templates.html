@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <title>{% block title_page %} Страница не определена системой {% endblock %}</title>
+    <!-- Подключение файлов -->
+    <!-- CSS and favicon icon -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="icon" type="image/png" href="{% static 'media/favicon.png' %}" />
+
+    <!-- fa fa-icon -_- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- JavaScript -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script type="text/javascript" src="{% static 'js/script.js' %}"></script> -->
+    {% block head %}{% endblock %}
+
+</head>
+<body>
+    <!-- Headers site -->
+    <header>
+        <div class="logo">
+            <a href="{% url 'basepage:index' %}">Крутой сайта</a>
+        </div>
+        <ul class="menu">
+            <li><a href="{% url 'market:product-list' %}">Магазин</a></li>
+            {% if user.is_authenticated %}
+                <li><a href="{{ user.profile.get_absolute_url }}"><i class="fa fa-user fa-lg"></i></a></li>
+                {% if user.is_staff %}
+                    <li><a href="{% url 'admin:index' %}"><i class="fa fa-desktop fa-lg"></i></a></li>
+                {% endif %}
+                <li><a href="{% url 'auth:logout' %}"><i class="fa fa-sign-out fa-lg"></i></a></li>
+            {% else %}
+                <li><a href="{% url 'auth:login' %}"><i class="fa fa-sign-in fa-lg"></i></a></li>
+            {% endif %}
+        </ul>
+    </header>
+    <!-- Logs Messages -->
+    {% if messages %}
+        <main>
+            <ul id='message-log'>
+                {% for message in messages %}
+                    <li>{{ message }}</li>
+                {% endfor %}
+            </ul>
+        </main>
+    {% endif %}
+    <!-- Content Site -->
+    <div>
+        <div id="content">
+            {% block content %}Содержимое страници не найдено{% endblock %}
+        </div>
+    </div>
+    <!-- Footer site -->
+    <footer>
+        <p>ОЧЕНЬ КРУТОЙ ПОДВАЛ САЙТ</p>
+        <p>Ну короче тут есть много чего интересного</p>
+        <p>Ты это заходи почаще</p>
+        {% if user.is_authenticated %}
+            {{ user.username }} будь как дома путник
+        {% endif %}
+    </footer>
+</body>
+</html>

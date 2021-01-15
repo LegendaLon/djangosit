@@ -1,0 +1,36 @@
+{% extends 'templates.html' %}
+
+{% block title_page %}Детали заказа{% endblock %}
+
+{% block content %}
+
+	<main>
+		{% if user.is_authenticated and order.client == user or user.is_staff %}
+
+			<p>Клиент: <a href="{{ object.client.get_absolute_url }}">{{ object.client.username }}</a></p>
+			<p>Товар: <a href="{{ object.product.get_absolute_url }}">{{ object.product.title }}</a></p>
+			<p>Категории товара: {% for a in object.product.category.all %} {{ a.name }}, {% empty %} Нет категорий {% endfor %}</p>
+			<p>Описание к заказу: {{ object.description }}</p>
+			<p>Статус: {{ object.status }}</p>
+			<p>Дата оформления заказа: {{ object.date }}</p>
+			<p>Стоимость: {{ object.product.price }}</p>
+			<p>Количество: {{ object.count }}</p>
+			<p>
+				{% if object.sale %}
+					Скидка: {{ object.sale.count }}%
+				{% endif %}
+			</p>
+			<p>Итог: {{ object.was_total_price }}</p>
+			<br>
+			{% if user.is_superuser or order.product.provider.owner == user or order.product.provider.workers.all in user %}
+				<p>
+					<a href="{{ order.get_update_url }}"><i class="fa fa-pencil"></i></a>	
+					<a href="{{ order.get_delete_url }}"><i class="fa fa-trash"></i></a>
+				</p>
+			{% endif %}
+		{% else %}
+			У Вас нет доступа к данной информации 
+		{% endif %}
+	</main>
+
+{% endblock %}
