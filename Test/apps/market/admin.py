@@ -91,11 +91,9 @@ class PromoCodeAdmin(admin.ModelAdmin):
 		}),
 		("Настройка", {
 			'fields': ('count', 'count_using', 'creater', 'work_is'),
-			'classes': ('grp-collapse grp-open',),
 		}),
 		('Даты', {
 			'fields': ('work_to', 'date_create'),
-			'classes': ('grp-collapse grp-open',),
 		}),
 	)
 

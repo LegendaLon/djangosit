@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'users.apps.UsersConfig',
     'market.apps.MarketConfig',
     
-    'grappelli',
+    # 'grappelli',
 
     'django.contrib.admin',
     'django.contrib.auth',

@@ -23,6 +23,6 @@ urlpatterns = [
     path('users/', include('users.urls')),
     path('shop/', include('market.urls')),
     
-    path('grappelli/', include('grappelli.urls')), # grappelli URLS
+    # path('grappelli/', include('grappelli.urls')), # grappelli URLS
     path('admin/', admin.site.urls),
 ]
